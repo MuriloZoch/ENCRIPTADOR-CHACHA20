@@ -1,0 +1,14 @@
+A criptografia é a arte de transformar uma mensagem legível em algo
+que só pode ser lido por quem possui a chave correta.
+
+O ChaCha20 é uma cifra de fluxo: ele gera uma sequência de bytes que parece
+aleatória (o keystream) a partir de uma chave de 256 bits, de um nonce de
+96 bits e de um contador. Cada byte da mensagem é combinado com um byte do
+keystream por meio da operação XOR.
+
+Para decifrar, basta gerar o mesmo keystream e aplicar o XOR novamente,
+pois a operação se desfaz sozinha.
+
+Caracteres especiais para teste: ç ã õ é ê í ó ú à â ô ü — ñ € ° ª º
+Números: 0123456789
+Símbolos: !@#$%&*()[]{}<>?/\|;:,.~^`'"
