@@ -2,10 +2,6 @@
 
 Implementação da cifra de fluxo **ChaCha20** ([RFC 8439](https://www.rfc-editor.org/rfc/rfc8439)) em Python puro, sem bibliotecas de criptografia. O programa cifra e decifra arquivos de qualquer tipo, cifra frases no terminal e valida a implementação com os vetores de teste oficiais da RFC.
 
-Projeto desenvolvido para a disciplina **SEM0580** (EESC/USP).
-
-> **Aviso:** implementação didática. Para proteger dados reais, use bibliotecas auditadas, como a [`cryptography`](https://cryptography.io).
-
 ---
 
 ## Funcionalidades
@@ -175,26 +171,3 @@ A pasta `exemplos/` traz arquivos para testar a cifragem de arquivos:
 - O chaveiro é salvo **sem proteção**. Gerenciadores reais cifram o próprio chaveiro com uma senha mestra.
 - A chave precisa ser compartilhada por um canal seguro; o ChaCha20 não resolve a troca de chaves.
 - Por ser em Python puro, é bem mais lento que implementações em C (cerca de 2 a 3 segundos para 1 MB).
-
-## Estrutura do repositório
-
-```
-.
-├── ENCRIPTADOR.py      # programa principal
-├── README.md
-└── exemplos/           # arquivos de teste
-```
-
-## Autores
-
-- [Nome] — [GitHub]
-- [Nome] — [GitHub]
-- [Nome] — [GitHub]
-- [Nome] — [GitHub]
-- [Nome] — [GitHub]
-- [Nome] — [GitHub]
-
-## Referências
-
-- [RFC 8439 — ChaCha20 and Poly1305 for IETF Protocols](https://www.rfc-editor.org/rfc/rfc8439)
-- D. J. Bernstein, [*ChaCha, a variant of Salsa20*](https://cr.yp.to/chacha/chacha-20080128.pdf) (2008)
